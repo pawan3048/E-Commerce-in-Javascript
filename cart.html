@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/cart.css">
+</head>
+<body>
+  <nav>
+    <img src="#" alt="Logo" style="color: #fff" />
+    <div id="nav-menu">
+      <a href="/">Home</a>
+      <a href="./index.html">Product</a>
+      <span id="loginPerson" style="color: #fff; cursor: pointer">
+        <span>user</span>
+      </span>
+        <a href="/login.html" onclick="logoutFun()">Logout</a>
+    </div>
+    <div class="cart-div">
+      <a href="./cart.html">Cart <sup id="cartCount">0</sup></a>
+    </div>
+  </nav>
+    <h1 style="margin: 20px;">Cart Page</h1>
+    <div id="cartProducts"></div>
+    <script src="./scripts/cart.js"></script>
+</body>
+</html>

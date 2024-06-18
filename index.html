@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body onload="homeLoadFun()">
+    <!-- NavBar -->
+    <nav>
+      <img src="#" alt="Logo" style="color: #fff" />
+      <div id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./index.html">Product</a>
+        <span id="loginPerson" style="color: #fff; cursor: pointer">
+          <span>user</span>
+        </span>
+          <a href="/login.html" onclick="logoutFun()">Logout</a>
+      </div>
+      <div class="cart-div">
+        <a href="./cart.html">Cart <sup id="cartCount">0</sup></a>
+      </div>
+    </nav>
+
+    <!-- Filter -->
+    <div id="filters-products">
+      <div>
+        <select name="sorting" id="sortByPrice" onchange="sortByPrice()">
+          <option value="">Sort By Price</option>
+          <option value="htl">High to Low</option>
+          <option value="lth">Low to High</option>
+        </select>
+        <select name="sorting" id="sortByName" onchange="sortByName()">
+          <option value="">Sort By Name</option>
+          <option value="asc">Ascending</option>
+          <option value="des">Descending</option>
+        </select>
+        <select name="sorting" id="filterByCategory" onchange="filterByCategory()">
+          <option value="">Sort By Category</option>
+          <option value="men's clothing">Men's</option>
+          <option value="women's clothing">Women's</option>
+          <option value="jewelery">Jewelery</option>
+          <option value="electronics">Electronic</option>
+        </select>
+      </div>
+      <div>
+        <button id="resetFilters">Reset</button>
+      </div>
+    </div>
+
+    <div id="products"></div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
