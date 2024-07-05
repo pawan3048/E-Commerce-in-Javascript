@@ -306,7 +306,7 @@ var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
 
 if(cartData.length>0){
   document.querySelector("#cartCount").innerText=cartData.length;
-  console.log(cartData.length)
+  // console.log(cartData.length)
 }
 
 function addToCart(ele){

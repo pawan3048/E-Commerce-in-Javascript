@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+#cart-page{
+    display: flex;
+    border: 2px solid;
+    max-width: 1280px;
+    min-width: 200px;
+    width: 100%;
+    margin: auto;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -55,9 +63,7 @@ nav #profile-menu{
 /* Cart Products CSS */
 
 #cartProducts{
-    max-width: 1280px;
-    min-width: 200px;
-    width: 100%;
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -66,7 +72,8 @@ nav #profile-menu{
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
+    box-shadow: 0 0 5px #999;
+    margin: 5px ;
     padding: 20px;
     &>h3{
         width: 200px;
@@ -79,19 +86,17 @@ nav #profile-menu{
 }
 .cartProCountDiv{
     display: flex;
-    /* flex-wrap: nowrap; */
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    width: 150px;
-    border: 1px solid;
+    width: 15%;
     &>button{
         padding: 5px 10px;
         font-size: 20px;
         cursor: pointer;
     }
 }
-#cartRemoveItem{
+.cartRemoveItem{
     padding: 10px;
     cursor: pointer;
     background-color: tomato;
@@ -100,4 +105,15 @@ nav #profile-menu{
     border-radius: 5px;
     font-weight: 600;
     letter-spacing: 1px;
+}
+#cart-total-box{
+    width: 30%;
+    box-shadow: 0 0 10px rgb(200, 200, 200);
+    border-radius: 5px;
+    margin: 40px auto;
+    padding: 20px;
+    border-left: 1px solid grey;
+}
+#cart-total-box>h2{
+    text-align: center;
 }
